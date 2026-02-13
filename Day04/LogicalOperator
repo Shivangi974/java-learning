@@ -1,0 +1,13 @@
+public class LogicalOperator{
+  public static void main(String []args){
+        boolean x=true, y=false;
+
+        // 5. Logical Operators
+        boolean x=true, y=false;
+        boolean a1=x&&y;
+        boolean b1=x||y;
+        boolean c1=!x;
+        System.out.println("X && y : "+ a1);
+        System.out.println("x || y : "+b1);
+        System.out.println("!x : "+ c1);
+}
