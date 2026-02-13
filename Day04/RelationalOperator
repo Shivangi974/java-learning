@@ -10,14 +10,6 @@ public class RelationalOperator {
         System.out.println("a==c : "+ (a==c));
         System.out.println("a!=c : " + (a!=c));
 
-
-        // 5. Logical Operators
-        boolean x=true, y=false;
-        System.out.println("X && y : "+ (x&&y));
-        System.out.println("x || y : "+(x||y));
-        System.out.println("!x : "+(!x));
-
-
     }
 }
 
