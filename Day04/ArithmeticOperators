@@ -1,0 +1,33 @@
+// Operators : are special symbols that perform operations of values or variables.
+
+public class Operators {
+    public static void main(String[] args) {
+        int a=10,b=3;
+
+        // 1. Arithmetic Operators
+        int sum=a+b;
+        System.out.println("sum : "+sum);
+        int sub=a-b;
+        System.out.println("sub : "+sub);
+        int mul=a*b;
+        System.out.println("mul : "+mul);
+        int div=a/b;
+        System.out.println("div : "+div);
+        int rem=a%b;
+        System.out.println("rem : "+rem);
+
+    }
+}
+
+
+// Types Of Operators : 
+// 1. Arithmetic Operators - +, -, *, /, %
+// 2. Unary Operators : ++, --
+// 3. Logical Operators : &&, ||, !
+// 4. Relational Operators : >, <, =, >=, <=, ==, !=
+// 5. Assignment Operators : =, +=, -=, *=, /=
+// 6. Ternary Operator : ?:;
+// 7. Bitwise Operator : &, |, ^, <<, >>, >>>
+// 8. Instance of Opeartor : obj instanceOf  Integer
+
+
