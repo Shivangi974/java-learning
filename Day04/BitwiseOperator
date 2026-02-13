@@ -1,0 +1,31 @@
+public class BitwiseOperator {
+    public static void main(String[] args) {
+
+        // 6. Ternary Opeartor
+        int x1=20,y1=10,z1=30;
+        int result=((x1>y1)?(x1>z1)?x1:z1: (y1>z1)? y1:z1);       
+
+
+        // 7. Bitwise Opeartor
+        int e=5;
+        int f=7;
+        // firstly convert 5 and 7 in binary then perform bitwise operator.
+        System.out.println("e&f : " + (e&f));           
+        System.out.println("e|f : "+ (e|f));
+        System.out.println("e^f : " +(e^f));     //xor- same-0, different-1
+        System.out.println("~e : "+ (~e));       // bitwise complement -- make 0 to 1 and vice versa.
+
+        //shift Operators
+        System.out.println("e <<2 : "+(e<<2));
+        System.out.println("f>>1 : "+(f>>1));    // 7-  111 >> 1 011(3)
+        System.out.println("f>>1 : "+(f>>1));
+
+        // 8.instanceOf Operator 
+        String str="Hello";
+        System.out.println(str instanceof String);
+
+        Object obj=new String();
+        System.out.println(obj instanceof Integer);   
+        System.out.println(obj instanceof String);
+    }
+}
