@@ -1,0 +1,31 @@
+public class AssignmentOperator {
+    public static void main(String[] args) {
+
+        int c=10,d=10;
+
+        //2. Unary Operators
+        System.out.println("pre-incement c : "+ (++c));
+        System.out.println("Post increment c : " + (c++));
+        System.out.println("pre decrement d : "+ (--d));
+        System.out.println("post decrement d : "+ (d--));
+
+
+        //3. Assignment Operators
+        int n=10;
+        n+=5;
+        System.out.println("After +=5 : "+n);
+        n*=2;
+        System.out.println("After *=2 : " +n );
+        n-=5;
+        System.out.println("After -=5 : " +n );
+        n/=2;
+        System.out.println("After /=2 : " +n );
+        n%=3;
+        System.out.println("After %=3 : " +n );
+       
+    }
+}
+
+
+
+
