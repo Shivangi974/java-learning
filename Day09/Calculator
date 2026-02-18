@@ -1,0 +1,75 @@
+package Day09;
+
+import java.util.Scanner;
+
+public class Calculator {
+
+  //method for addition
+  static void addition(double a,double b){
+    System.out.println("sum : "+ (a+b)); 
+  }
+
+  // method for subtraction 
+  static void subtraction(double a,double b){
+    System.out.println("sub : " + (a-b));
+  }
+
+  // method for multiplication
+  static void multiplication(double a,double b){
+    System.out.println("mul : " + (a*b));
+  }
+
+  // method for division 
+  static void division(double a, double b){
+    if(b==0){
+      System.out.println("Error: Cannot Divide by zero.");
+    }
+    System.out.println( "Div : " + (a/b)); 
+  }
+
+  static void calculate(double num1,double num2,char op){
+    switch(op){
+      case '+':
+        addition(num1, num2);
+        break;
+            
+      case '-':
+        subtraction(num1, num2);
+        break;
+
+      case '*':
+        multiplication(num1, num2);
+        break;
+
+      case '/':
+        division(num1, num2);
+        break;
+
+      default:
+        System.out.println("Invalid Operator! ");
+    }
+  }
+  public static void main(String[] args) {
+    Scanner sc=new Scanner(System.in);
+    char choice;
+    do{
+      System.out.println("-----------------Calculator-------------------");
+
+      System.out.println("Enter First Number : ");
+      double x=sc.nextDouble();
+      System.out.println("Enter Second Number : ");
+      double y=sc.nextDouble();
+
+      System.out.println("Enter Operators (+, -, *, /) : ");
+      char op=sc.next().charAt(0);
+
+      calculate(x,y,op);
+
+      System.out.println("Do you want to continue (Y/N): ");
+      choice=sc.next().charAt(0);
+    }
+    while(choice=='y'||choice=='Y');
+    sc.close();
+    System.out.println("Calculator Exited...");
+  }
+}
