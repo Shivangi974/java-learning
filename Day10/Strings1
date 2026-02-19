@@ -12,5 +12,6 @@ public class Strings1 {
         System.out.println(name1.equals(name3));
 
         // in string if value is same (Shivangi) then both name1 and name2 store at same memory location. but if we create another String like this then both name1 and name2 store at different location.  
+
     }
 }
