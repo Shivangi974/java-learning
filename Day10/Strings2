@@ -1,0 +1,57 @@
+public class Strings2 {
+    public static void main(String[] args) {
+        String name="Shivangi Sharma";
+
+        // length()
+        System.out.println("Length of name : "+ name.length());
+
+        // toUpperCase() , toLowerCase()
+        String upper=name.toUpperCase();
+        System.out.println("UpperCase String : "+upper);
+        System.out.println("Original String : "+ name);   // Strings are immutable . so orginal string cant be change.
+
+        String lower=name.toLowerCase();
+        System.out.println("LowerCase String : "+lower);
+
+
+        //contains()
+        System.out.println("Contains : "+ name.contains("Sharma"));    // it returns boolean value
+
+        //indexOf() ,lastIndexOf()
+        System.out.println("Index of S : "+ name.indexOf("S"));        // it returns first matching char index
+        System.out.println("lastIndex of S : "+ name.lastIndexOf("S"));
+
+        // subString(beginIndex, endIndex)
+        System.out.println("subString : "+ name.substring(0, 8));
+
+        // concat()
+        String lst="Shivangi";
+        System.out.println("Concat : " +name.concat(lst));
+        System.out.println("Concat using + :" + name + lst);
+
+        //  replace(old substr, new substr)
+        System.out.println("replace: " + name.replace("Shivangi", "Ruchi"));
+
+        // isEmpty() 
+        String str="";
+        System.out.println("isEmpty() :"+ str.isEmpty());
+        System.out.println("isBlank : "+ str.isBlank());
+        // Use isEmpty() → returns true only string is empty . no single space allowed
+        // Use isBlank() → returns true when string is empty or string has space, escape sequence character .it only returns false if it shores characters.
+
+
+        // equalsIgnoreCase() 
+        String name4="shivangi kumari";
+        System.out.println("equalsIgnoreCase() : "+ name.equalsIgnoreCase(name4));
+
+
+        //split()
+        String arr[]=name.split(" ");      // split() return array of string.
+        System.out.println("split() : ");     // split method split string according to given regex.
+        for(int i=0;i<arr.length;i++){
+            System.out.println(arr[i]);
+        }
+        
+
+    }
+}
