@@ -1,0 +1,16 @@
+public class Strings1 {
+    public static void main(String[] args) {
+        String name1="Shivangi";
+        String name2="Shivangi";
+
+        System.out.println(name1==name2);    //  == checks reference
+        System.out.println(name1.equals(name2));  //.equals check value
+
+
+        String name3=new String("Shivangi");
+        System.out.println(name1==name3);
+        System.out.println(name1.equals(name3));
+
+        // in string if value is same (Shivangi) then both name1 and name2 store at same memory location. but if we create another String like this then both name1 and name2 store at different location.  
+    }
+}
