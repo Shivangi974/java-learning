@@ -1,5 +1,3 @@
-package Day12;
-
 class Students{
     public int roll;
     public String name;
