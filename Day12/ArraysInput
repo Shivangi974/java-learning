@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+public class ArraysInput {
+   public ArraysInput() {
+   }
+
+   public static void main(String[] var0) {
+      Scanner var1 = new Scanner(System.in);
+      System.out.println("Enter num of elements : ");
+      int var2 = var1.nextInt();
+      int[] var3 = new int[var2];
+      System.out.println("Enter " + var2 + "elements : ");
+
+      int var4;
+      for(var4 = 0; var4 < var2; ++var4) {
+         var3[var4] = var1.nextInt();
+      }
+
+      System.out.println("Elements of an array are : ");
+
+      for(var4 = 0; var4 < var2; ++var4) {
+         System.out.println(var3[var4]);
+      }
+
+   }
+}
