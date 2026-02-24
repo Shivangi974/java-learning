@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class ReverseAnArray {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter Size of an array : ");
+        int n=sc.nextInt();
+
+        int orgArr[]=new int[n];
+        int reverseArr[]=new int[n];
+
+        System.out.println("Enter Elements of an array : ");
+        for(int i=0;i<n;i++){
+            orgArr[i]=sc.nextInt();
+        }
+
+        for(int i=0;i<n;i++){
+            reverseArr[i]=orgArr[n-i-1];
+        }
+
+        for(int i=0;i<n;i++){
+            System.out.print(reverseArr[i] + " ");
+        }
+    }
+}
