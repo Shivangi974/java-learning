@@ -1,0 +1,45 @@
+// Selection sort me har smallest element find krte h 
+// usko current position se swap krte h 
+
+// Simple logic
+// 1. 0th index se start kro 
+// 2. Pura array me smallest element dhundho 
+// 3. usko 1st position se swap krdo 
+// 4. Phir 2nd position k lie repeat kro 
+
+
+import java.util.Scanner;
+
+public class SelectionSort {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter Size of an array : ");
+        int n=sc.nextInt();
+        int arr[]=new int[n];
+
+        System.out.println("Enter elements of an array : ");
+        for(int i=0;i<n;i++){
+            arr[i]=sc.nextInt();
+        }
+        int min;
+
+        //Selection sort
+        for(int i=0;i<n-1;i++){
+            min=i;
+            for(int j=i+1;j<n;j++){
+                if(arr[min]>arr[j]){
+                    min=j;
+                }
+            }
+            // System.out.println(min);
+            int temp=arr[i];
+            arr[i]=arr[min];
+            arr[min]=temp;
+        }
+
+        //printing
+        for(int i=0;i<n;i++){
+            System.out.print(arr[i] + " \t");
+        }
+    }
+}
