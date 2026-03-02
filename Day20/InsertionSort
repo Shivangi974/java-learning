@@ -1,0 +1,20 @@
+// Array k left side ko sorted mana jata h 
+// har new element ko uski correct position par insert krte h 
+
+public class InsertionSort {
+    public static void main(String[] args) {
+        int arr[]={5,3,8,4,2};
+        for(int i=1;i<arr.length;i++){
+            int current=arr[i];
+            int j;
+            for(j=i-1; j>=0 && arr[j]>current;j--){
+                arr[j+1]=arr[j];
+            }
+            arr[j+1]=current;
+        }
+        System.out.println("Sorted Array : ");
+        for(int num:arr){
+            System.out.print(num + "\t");
+        }
+    }
+}
