@@ -1,0 +1,19 @@
+// Two ways to reverse a string:
+// 1. using loop  -- we do it in previous folder
+// 2. using stringBuilder
+
+package Day21;
+
+public class ReverseString {
+    public static void main(String[] args) {
+        String name="Shivangi";
+
+        StringBuilder s=new StringBuilder(name);
+        s.reverse();
+
+        System.out.println(s);
+    }
+    
+}
+
+
