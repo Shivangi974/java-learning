@@ -1,0 +1,16 @@
+public class ReverseWord {
+    public static void main(String[] args) {
+        String str="I Love Java";
+
+        String newStr[]=str.split(" ");
+
+
+        for(int i=0;i<newStr.length;i++){
+            String word=newStr[i];
+            for(int j=word.length()-1;j>=0;j--){
+                System.out.print(word.charAt(j));
+            }
+            System.out.print("\t");
+        }
+    }
+}
