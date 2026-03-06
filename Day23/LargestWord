@@ -1,0 +1,15 @@
+public class LargestWord {
+    public static void main(String[] args) {
+        String str="I love Java Programming";
+
+        String newString[]=str.split(" ");
+        String largest=newString[0];
+
+        for(int i=1;i<newString.length;i++){
+            if(largest.length()<newString[i].length()){
+                    largest=newString[i];
+            }
+        }
+        System.out.println(largest);
+    }
+}
