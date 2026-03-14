@@ -1,0 +1,29 @@
+// fibonacci Series :  0, 1, 1, 2, 3, 5, 8,13,21,...... 
+// sum of previous 2number 
+
+import java.util.Scanner;
+
+public class FibonacciSeries {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+
+        System.out.println("Enter Number of Terms: ");
+        int n=sc.nextInt();
+
+        System.out.println("Enter 1st number : ");
+        int a1=sc.nextInt();
+        System.out.println("Enter Second Number ");
+        int a2=sc.nextInt();
+        int a3;
+        
+        System.out.print(a1+" "+a2+" ");
+        
+        for(int i=0;i<n-2;i++){
+            a3=a1+a2;
+            a1=a2;
+            a2=a3;
+            System.out.print(a3 +" ");
+        }
+        sc.close();
+    }
+}
